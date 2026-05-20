@@ -1,15 +1,41 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import {ThemeProvider} from '@/components/theme-provider'
+import Navbar from "@/components/navbar";
+import localFont from 'next/font/local';
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+
+const jetbrainsMono = localFont({
+  src: [
+    {
+      path: "../public/fonts/jetbrains_mono/static/JetBrainsMono-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/jetbrains_mono/static/JetBrainsMono-Bold.ttf",
+      weight: "700",
+      style: "normal",
+    }
+  ],
+  variable: "--font-jetbrains-mono"
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const sans = localFont({
+  variable: "--font-sans",
+  src: [
+    {path: "../public/fonts/Google_Sans/static/GoogleSans-Regular.ttf", weight: "400", style: "normal"},
+    {path: "../public/fonts/Google_Sans/static/GoogleSans-Bold.ttf", weight: "700", style: "normal"}
+  ]
+});
+
+const dancingScript = localFont({
+  variable: "--font-dancing-script",
+  src: [
+    {path: "../public/fonts/Dancing_Script/static/DancingScript-Regular.ttf", weight: "400", style: "normal"},
+    {path: "../public/fonts/Dancing_Script/static/DancingScript-Bold.ttf", weight: "700", style: "normal"}
+  ]
 });
 
 export const metadata: Metadata = {
@@ -25,9 +51,16 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+      className={`${jetbrainsMono.variable} ${sans.variable} ${dancingScript.variable} h-full antialiased min-w-87.5 dark:bg-background dark:text-foreground`}
+    suppressHydrationWarning>
+      
+        <body className="min-h-full flex flex-col">
+          <ThemeProvider>
+            <Navbar />
+            {children}
+          </ThemeProvider>
+        </body>
+
     </html>
   );
 }
