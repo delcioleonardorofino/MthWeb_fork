@@ -10,7 +10,7 @@ export default function LandingPage() {
         <div className='max-w-6xl mx-auto px-4 md:px-6'>
 
           <div className='flex flex-col lg:flex-row items-start gap-16'>
-            <div className='flex-1 min-w-0'>
+            <div className='flex flex-col min-w-0'>
               
                 <div className='inline-flex items-center gap-2 px-2.5 py-1 text-xs font-medium border border-border rounded-full text-muted-foreground mb-6 bg-card'>
                   <span className='flex h-1.5 w-1.5 rounded-full bg-primary'>
