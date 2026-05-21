@@ -99,6 +99,143 @@ export default function Showcase(){
 
             </div>
             </FadeIn>
+            <FadeIn delay={0.1}>
+            <div className="group rounded-md border border-border bg-card hover:border-primary/40 transition-colors overflow-hidden cursor-pointer">
+                <div className="aspect-video overflow-hidden relative bg-muted">
+                    <Image 
+                    src='/showcase-civil.png'
+                    alt="project image"
+                    width={300}
+                    height={300}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.03"
+                    />
+                    <div className="absolute inset-0 bg-linear-to-t from-black/40 to-transparent"></div>
+                    <span className="absolute top-2.5 left-2.5 px-2 py-0.5 text-xs font-medium bg-background/90 rounded border border-border text-foreground">
+                        Civil + Estruturas
+                    </span>
+                </div>
+
+                <div className='p-4'>
+                    <div className='flex items-start justify-between gap-2 mb-2'>
+                        <div>
+                            <p className='text-xs text-muted-foreground'>
+                                sousa/
+                            </p>
+                            <h3 className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors font-mono">
+                                Estruturas-resilientes-a-mudancas-climaticas
+                            </h3>
+                        </div>
+                        <ArrowUpRight size={20} fill='none' stroke='currentColor' strokeWidth={2} strokeLinecap='round' strokeLinejoin='round' aria-hidden='true' 
+                        className="h-4 w-4 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity shrink-0 mt-1"/>
+                    </div>
+
+                    <p className="text-xs text-muted-foreground mb-4 line-clamp-2 leading-relaxed">
+                        Concepcao do plano estrutural de uma ponte resiliente a mudancas climaticas e intemperies.
+                    </p>
+                    <div className='flex items-center justify-between text-xs text-muted-foreground'>
+                        <div className='flex items-center gap-3'>
+                            <span className="flex items-center gap-1">
+                                <Star size={20} fill='none' stroke='currentColor' strokeWidth={2} strokeLinecap='round' strokeLinejoin='round' aria-hidden='true' 
+                                className="h-3.5 w-3.5"/>
+                                97
+                            </span>
+                            <span className="flex items-center gap-1">
+                                <Users size={20} fill='none' stroke='currentColor' strokeWidth={2} strokeLinecap='round' strokeLinejoin='round' aria-hidden='true' 
+                                className="h-3.5 w-3.5"/>
+                                6
+                            </span>
+                            <span className="flex items-center gap-1">
+                                <GitCommit size={20} fill='none' stroke='currentColor' strokeWidth={2} strokeLinecap='round' strokeLinejoin='round' aria-hidden='true' 
+                                className="h-3.5 w-3.5"/>
+                                11
+                            </span>
+                        </div>
+
+                        <div className='flex items-center gap-1.5'>
+                            <span className="flex items-center gap-1">
+                                <span className="h-2.5 w-2.5 rounded-full bg-blue-500"></span>
+                                <span>AutoCAD</span>
+                            </span>
+                            <span className="flex items-center gap-1">
+                                <span className="h-2.5 w-2.5 rounded-full bg-yellow-500"></span>
+                                <span>Estrutura-de-materiais</span>
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            </FadeIn>
+
+            <FadeIn delay={0.1}>
+            <div className="group rounded-md border border-border bg-card hover:border-primary/40 transition-colors overflow-hidden cursor-pointer">
+                <div className="aspect-video overflow-hidden relative bg-muted">
+                    <Image 
+                    src='/showcase-soft.png'
+                    alt="project image"
+                    width={300}
+                    height={300}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.03"
+                    />
+                    <div className="absolute inset-0 bg-linear-to-t from-black/40 to-transparent"></div>
+                    <span className="absolute top-2.5 left-2.5 px-2 py-0.5 text-xs font-medium bg-background/90 rounded border border-border text-foreground">
+                        Eletrica + Electronica
+                    </span>
+                </div>
+
+                <div className='p-4'>
+                    <div className='flex items-start justify-between gap-2 mb-2'>
+                        <div>
+                            <p className='text-xs text-muted-foreground'>
+                                raul/
+                            </p>
+                            <h3 className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors font-mono">
+                                Turbinas-de-geracao-de-energia
+                            </h3>
+                        </div>
+                        <ArrowUpRight size={20} fill='none' stroke='currentColor' strokeWidth={2} strokeLinecap='round' strokeLinejoin='round' aria-hidden='true' 
+                        className="h-4 w-4 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity shrink-0 mt-1"/>
+                    </div>
+
+                    <p className="text-xs text-muted-foreground mb-4 line-clamp-2 leading-relaxed">
+                        Placa electrica de um sistema para edge computing em redes de telefonia movel.
+                    </p>
+                    <div className='flex items-center justify-between text-xs text-muted-foreground'>
+                        <div className='flex items-center gap-3'>
+                            <span className="flex items-center gap-1">
+                                <Star size={20} fill='none' stroke='currentColor' strokeWidth={2} strokeLinecap='round' strokeLinejoin='round' aria-hidden='true' 
+                                className="h-3.5 w-3.5"/>
+                                1225
+                            </span>
+                            <span className="flex items-center gap-1">
+                                <Users size={20} fill='none' stroke='currentColor' strokeWidth={2} strokeLinecap='round' strokeLinejoin='round' aria-hidden='true' 
+                                className="h-3.5 w-3.5"/>
+                                2
+                            </span>
+                            <span className="flex items-center gap-1">
+                                <GitCommit size={20} fill='none' stroke='currentColor' strokeWidth={2} strokeLinecap='round' strokeLinejoin='round' aria-hidden='true' 
+                                className="h-3.5 w-3.5"/>
+                                93
+                            </span>
+                        </div>
+
+                        <div className='flex items-center gap-1.5'>
+                            <span className="flex items-center gap-1">
+                                <span className="h-2.5 w-2.5 rounded-full bg-blue-500"></span>
+                                <span>EasyEDA</span>
+                            </span>
+                            <span className="flex items-center gap-1">
+                                <span className="h-2.5 w-2.5 rounded-full bg-yellow-500"></span>
+                                <span>Proteus</span>
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            </FadeIn>
 
         </div>
         </div>

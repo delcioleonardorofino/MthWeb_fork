@@ -12,16 +12,16 @@ export default function Hero(){
             <div className='max-w-6xl mx-auto px-4 md:px-6'>
 
                 <div className='flex flex-col lg:flex-row items-start gap-16'>
-
+                    <FadeIn delay={0.1}>
                     <CTA />
                     
                     <div className='flex flex-col md:pt-18 w-full max-w-xl lg:max-w-none'>
-                        <FadeIn delay={0.1}>
-                            <CodeCard />
-                            <Stats /> 
-                        </FadeIn>
-                        </div>
-                    
+                        
+                        <CodeCard />
+                        <Stats /> 
+                        
+                    </div>
+                    </FadeIn>
 
                 </div>
 

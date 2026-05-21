@@ -1,12 +1,12 @@
 import Link from 'next/link'
 import {ArrowRight, Users, DraftingCompass, Lightbulb, GraduationCap} from 'lucide-react'
-import { FadeIn } from './animations/fade-in'
+// import { FadeIn } from './animations/fade-in'
 
 
 export default function CTA(){
     return (
         <div className='flex flex-col min-w-0 w-full max-w-full overflow-hidden'>
-            <FadeIn delay={0.1}>
+            
             <div className='inline-flex self-start items-center gap-2 px-2.5 py-1 text-xs font-medium border border-border rounded-full text-muted-foreground mb-6 bg-card'>
                 <span className='flex h-1.5 w-1.5 rounded-full bg-primary'></span>
                 Versão Beta
@@ -53,7 +53,6 @@ export default function CTA(){
                     <span className='font-medium text-muted-foreground'>4</span> formações
                 </div>
             </div>
-            </FadeIn>
 
         </div>
     )
