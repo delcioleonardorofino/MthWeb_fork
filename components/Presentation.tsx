@@ -11,7 +11,7 @@ export default function Presentation (){
               Projectado para criadores 
             </h2>
             <p className='text-muted-foreground max-w-2xl'>
-              Nao e apenas mais uma rede social. O MTH fornece as ferramentas especializadas que uma colaboracao tecnica seria entre diferentes disciplinas realmente exige.
+              Não é apenas mais uma rede social. O MTH fornece as ferramentas especializadas que uma colaboração técnica séria entre diferentes disciplinas realmente exige.
             </p>
           </div>
 
@@ -22,10 +22,10 @@ export default function Presentation (){
                 <Network size={20} fill='none' className='h-4 w-4 mx-auto my-1.5 self-center text-muted-foreground group-hover:text-primary transition-colors' strokeWidth={2} strokeLinecap='round' strokeLinejoin='round' aria-hidden='true' />
               </div>
               <h3 className='text-sm font-semibold font-mono text-foreground mb-2'>
-                Correspondencia entre disciplinas
+                Correspondência entre disciplinas
               </h3>
               <p className='text-sm text-muted-foreground leading-relaxed'>
-                Conectamos voce com engenheiros cuja especializacao preenche as suas lacunas. Seu software precisa de Harware? Nos encontramos a pessoa certa.
+                Conectamos você com engenheiros cuja especialização preenche as suas lacunas. Seu software precisa de Harware? Nós encontramos a pessoa certa.
               </p>
             </div>
 
@@ -34,10 +34,10 @@ export default function Presentation (){
                 <Layers size={20} fill='none' className='h-4 w-4 mx-auto my-1.5 self-center text-muted-foreground group-hover:text-primary transition-colors' strokeWidth={2} strokeLinecap='round' strokeLinejoin='round' aria-hidden='true' />
               </div>
               <h3 className='text-sm font-semibold font-mono text-foreground mb-2'>
-                Espaco para trabalhos tecnicos
+                Espaço para trabalhos técnicos 
               </h3>
               <p className='text-sm text-muted-foreground leading-relaxed'>
-                Ambiente criado especificamente para colaborar com engenheiros de diversas areas em projectos multidisciplinares.
+                Ambiente criado especificamente para colaborar com engenheiros de diversas áreas em projectos multidisciplinares.
               </p>
             </div>
 
@@ -46,10 +46,10 @@ export default function Presentation (){
                 <BookOpen size={20} fill='none' className='h-4 w-4 mx-auto my-1.5 self-center text-muted-foreground group-hover:text-primary transition-colors' strokeWidth={2} strokeLinecap='round' strokeLinejoin='round' aria-hidden='true' />
               </div>
               <h3 className='text-sm font-semibold font-mono text-foreground mb-2'>
-                Portfolios de projectos
+                Portfólios de projectos
               </h3>
               <p className='text-sm text-muted-foreground leading-relaxed'>
-                Apresente projectos multidisciplinares com documentacao rica, arquivos versionados e atribuicao adequada para toda equipe.
+                Apresente projectos multidisciplinares com documentação rica, arquivos versionados e atribuição adequada para toda equipe.
               </p>
             </div>
 
@@ -61,7 +61,7 @@ export default function Presentation (){
                 Troca de expertise
               </h3>
               <p className='text-sm text-muted-foreground leading-relaxed'>
-                Troque conhecimento. Ajude um engenheiro mecanico com Python e receba orientacao sobre analise por elementos finitos em troca
+                Troque conhecimento. Ajude um engenheiro mecânico com Python e receba orientação sobre análise por elementos finitos em troca
               </p>
             </div>
 
@@ -73,7 +73,7 @@ export default function Presentation (){
                 Pool global de talentos
               </h3>
               <p className='text-sm text-muted-foreground leading-relaxed'>
-                Acesse uma rede nacional e mundial de engenheiros especializados. Quebre barreiras geograficas para montar a equipe.
+                Acesse uma rede nacional e mundial de engenheiros especializados. Quebre barreiras geográficas para montar a equipe.
               </p>
             </div>
 
@@ -82,10 +82,10 @@ export default function Presentation (){
                 <Cpu size={20} fill='none' className='h-4 w-4 mx-auto my-1.5 self-center text-muted-foreground group-hover:text-primary transition-colors' strokeWidth={2} strokeLinecap='round' strokeLinejoin='round' aria-hidden='true' />
               </div>
               <h3 className='text-sm font-semibold font-mono text-foreground mb-2'>
-                Integracao entre hardware e software
+                Integração entre hardware e software
               </h3>
               <p className='text-sm text-muted-foreground leading-relaxed'>
-                Ferramentas e templates dedicados para desenvolvimento de IoT, robotica, sistemas ambientais e outros projectos que exigem colaboracao entre engenheiros.
+                Ferramentas e templates dedicados para desenvolvimento de IoT, robótica, sistemas ambientais e outros projectos que exigem colaboração entre engenheiros.
               </p>
             </div>
 
