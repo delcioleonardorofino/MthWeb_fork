@@ -43,7 +43,7 @@ export default function Showcase(){
                     />
                     <div className="absolute inset-0 bg-linear-to-t from-black/40 to-transparent"></div>
                     <span className="absolute top-2.5 left-2.5 px-2 py-0.5 text-xs font-medium bg-background/90 rounded border border-border text-foreground">
-                        Mecanica + Materiais
+                        Mecânica + Materiais
                     </span>
                 </div>
 
@@ -54,7 +54,7 @@ export default function Showcase(){
                                 raul/
                             </p>
                             <h3 className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors font-mono truncate">
-                                Turbinas-de-geracao-de-energia
+                                Turbinas-de-geração-de-energia
                             </h3>
                         </div>
                         <ArrowUpRight size={20} fill='none' stroke='currentColor' strokeWidth={2} strokeLinecap='round' strokeLinejoin='round' aria-hidden='true' 
@@ -62,7 +62,7 @@ export default function Showcase(){
                     </div>
 
                     <p className="text-xs text-muted-foreground mb-4 line-clamp-2 leading-relaxed">
-                        Microturbina eficiente para geracao de energia atraves da cinetica hidrica.
+                        Microturbina eficiente para geração de energia através da cinética hídrica.
                     </p>
                     <div className='flex items-center justify-between text-xs text-muted-foreground'>
                         <div className='flex items-center gap-3'>
@@ -122,7 +122,7 @@ export default function Showcase(){
                                 sousa/
                             </p>
                             <h3 className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors font-mono truncate">
-                                Estruturas-resilientes-a-mudancas-climaticas
+                               Estruturas-resilientes
                             </h3>
                         </div>
                         <ArrowUpRight size={20} fill='none' stroke='currentColor' strokeWidth={2} strokeLinecap='round' strokeLinejoin='round' aria-hidden='true' 
@@ -130,7 +130,7 @@ export default function Showcase(){
                     </div>
 
                     <p className="text-xs text-muted-foreground mb-4 line-clamp-2 leading-relaxed">
-                        Concepcao do plano estrutural de uma ponte resiliente a mudancas climaticas e intemperies.
+                        Concepção do plano estrutural de uma ponte resiliente à mudanças climáticas e intempéries.
                     </p>
                     <div className='flex items-center justify-between text-xs text-muted-foreground'>
                         <div className='flex items-center gap-3'>
@@ -158,7 +158,7 @@ export default function Showcase(){
                             </span>
                             <span className="flex items-center gap-1">
                                 <span className="h-2.5 w-2.5 rounded-full bg-yellow-500"></span>
-                                <span>Estrutura-de-materiais</span>
+                                <span>HST</span>
                             </span>
                         </div>
 
@@ -180,7 +180,7 @@ export default function Showcase(){
                     />
                     <div className="absolute inset-0 bg-linear-to-t from-black/40 to-transparent"></div>
                     <span className="absolute top-2.5 left-2.5 px-2 py-0.5 text-xs font-medium bg-background/90 rounded border border-border text-foreground">
-                        Eletrica + Electronica
+                        Elétrica + Electrónica 
                     </span>
                 </div>
 
@@ -191,7 +191,7 @@ export default function Showcase(){
                                 raul/
                             </p>
                             <h3 className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors font-mono truncate">
-                                Turbinas-de-geracao-de-energia
+                                Turbinas-de-geração-de-energia
                             </h3>
                         </div>
                         <ArrowUpRight size={20} fill='none' stroke='currentColor' strokeWidth={2} strokeLinecap='round' strokeLinejoin='round' aria-hidden='true' 
@@ -199,7 +199,7 @@ export default function Showcase(){
                     </div>
 
                     <p className="text-xs text-muted-foreground mb-4 line-clamp-2 leading-relaxed">
-                        Placa electrica de um sistema para edge computing em redes de telefonia movel.
+                        Placa eléctrica de um sistema para edge computing em redes de telefonia móvel.
                     </p>
                     <div className='flex items-center justify-between text-xs text-muted-foreground'>
                         <div className='flex items-center gap-3'>
