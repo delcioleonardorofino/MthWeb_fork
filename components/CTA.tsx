@@ -45,7 +45,7 @@ export default function CTA(){
 
                 <div className='flex items-center gap-1 min-w-max'>
                     <Lightbulb size={20} fill='none' stroke='yellow' strokeWidth={2} strokeLinecap='round' strokeLinejoin='round' aria-hidden='true' />
-                    <span className='font-medium text-muted-foreground'>211</span> solucoes
+                    <span className='font-medium text-muted-foreground'>211</span> solucões
                 </div>
     
                 <div className='flex items-center gap-1 min-w-max'>
