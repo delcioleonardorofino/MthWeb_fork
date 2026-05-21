@@ -53,7 +53,7 @@ export default function Showcase(){
                             <p className='text-xs text-muted-foreground'>
                                 raul/
                             </p>
-                            <h3 className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors font-mono">
+                            <h3 className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors font-mono truncate">
                                 Turbinas-de-geracao-de-energia
                             </h3>
                         </div>
@@ -121,7 +121,7 @@ export default function Showcase(){
                             <p className='text-xs text-muted-foreground'>
                                 sousa/
                             </p>
-                            <h3 className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors font-mono">
+                            <h3 className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors font-mono truncate">
                                 Estruturas-resilientes-a-mudancas-climaticas
                             </h3>
                         </div>
@@ -190,7 +190,7 @@ export default function Showcase(){
                             <p className='text-xs text-muted-foreground'>
                                 raul/
                             </p>
-                            <h3 className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors font-mono">
+                            <h3 className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors font-mono truncate">
                                 Turbinas-de-geracao-de-energia
                             </h3>
                         </div>

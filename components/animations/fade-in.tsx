@@ -13,23 +13,19 @@ interface FadeInProps {
     once?: boolean;
 }
 
-export function FadeIn({children, className, delay, y, duration, once}: FadeInProps) {
+export function FadeIn({children, className, delay=0, duration=0.45, once=true}: FadeInProps) {
     return (
         <motion.div
         initial={{
             opacity: 0,
-            y:30,
-            filter: 'blur(10px)',
         }}
         whileInView={{
             opacity: 1,
-            y: 0,
-            filter: 'blur(0px)',
         }}
         transition={{
-            duration:0.6,
+            duration,
             delay,
-            ease: 'easeInOut',
+            ease: 'easeOut',
         }}
         viewport={{
             once : true,
