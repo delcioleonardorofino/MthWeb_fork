@@ -14,34 +14,34 @@ export default function GlobalStats(){
                   53+
                 </div>
                 <div className='text-xs text-muted-foreground'>
-                  Colaboracoes
+                  Colaborações 
                 </div>
               </div>
 
               <div className='py-8 px-4 text-center md:border-r border-b md:border-b-none border-border'>
                 <div className='text-2xl font-bold text-foreground mb-0.5'>
-                  53+
+                  78+
                 </div>
                 <div className='text-xs text-muted-foreground'>
-                  Colaboracoes
+                  Enhenheiros especialistas
                 </div>
               </div>
 
               <div className='py-8 px-4 text-center border-r border-b md:border-b-none border-border'>
                 <div className='text-2xl font-bold text-foreground mb-0.5'>
-                  53+
+                  27+
                 </div>
                 <div className='text-xs text-muted-foreground'>
-                  Colaboracoes
+                  Artigos
                 </div>
               </div>
 
               <div className='py-8 px-4 text-center border-b md:border-b-none border-border'>
                 <div className='text-2xl font-bold text-foreground mb-0.5'>
-                  53+
+                  13+
                 </div>
                 <div className='text-xs text-muted-foreground'>
-                  Colaboracoes
+                  Eventos
                 </div>
               </div>
 

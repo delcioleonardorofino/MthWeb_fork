@@ -18,7 +18,7 @@ export default function Stats (){
                     53+
                 </div>
                 <div className='text-xs text-muted-foreground'>
-                    Colaboracoes
+                    Colaborações 
                 </div>
 
             </div>

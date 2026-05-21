@@ -31,18 +31,18 @@ export default function CodeCard(){
                         engenharias_de <span className='pr-1'>:</span>
                         {'['} 
                     </span>
-                    {`"software", "mecanica"`},
+                    {`"software", "mecânica"`},
                 </div>
                 
                 <div className='text-foreground pl-10'>
                     <span className='text-primary'>
-                        {`"electica", "Eletronica", "Civil", "Quimica", "Ambiente", ...outras'`}
+                        {`"eléctica", "Eletrónica", "Civíl", "Química", "Ambiente", ...outras'`}
                     </span>
                     {"]"},
                 </div>
 
                 <span className='p-4'>
-                    colaboracoes =
+                    colaborações =
                 </span> 
                 <span className='text-blue-400'>
                     true
