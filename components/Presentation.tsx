@@ -7,7 +7,7 @@ export default function Presentation (){
         <section className='py-20 border-b border-border'>
         <div className='max-w-6xl mx-auto px-4 md:px-6'>
           <div className='mb-12'>
-            <h2 className='text-2xl font-bold text-foreground mb-3'>
+            <h2 className='text-2xl font-bold font-mono text-foreground mb-3'>
               Projectado para criadores 
             </h2>
             <p className='text-muted-foreground max-w-2xl'>
@@ -17,7 +17,7 @@ export default function Presentation (){
 
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-border rounded-md overflow-hidden border border-border'>
 
-            <div className='bg-card p-6 hover-bg-accent/50 transition-colors group'>
+            <div className='bg-card p-6 hover:bg-accent/50 transition-colors group'>
               <div className='h-8 w-8 rounded-md bg-background border border-border flex-1 justify-center mb-4 group-hover:border-primary/40 transition-colors'>
                 <Network size={20} fill='none' className='h-4 w-4 mx-auto my-1.5 self-center text-muted-foreground group-hover:text-primary transition-colors' strokeWidth={2} strokeLinecap='round' strokeLinejoin='round' aria-hidden='true' />
               </div>
@@ -29,7 +29,7 @@ export default function Presentation (){
               </p>
             </div>
 
-            <div className='bg-card p-6 hover-bg-accent/50 transition-colors group'>
+            <div className='bg-card p-6 hover:bg-accent/50 transition-colors group'>
               <div className='h-8 w-8 rounded-md bg-background border border-border flex-1 justify-center mb-4 group-hover:border-primary/40 transition-colors'>
                 <Layers size={20} fill='none' className='h-4 w-4 mx-auto my-1.5 self-center text-muted-foreground group-hover:text-primary transition-colors' strokeWidth={2} strokeLinecap='round' strokeLinejoin='round' aria-hidden='true' />
               </div>
@@ -41,7 +41,7 @@ export default function Presentation (){
               </p>
             </div>
 
-            <div className='bg-card p-6 hover-bg-accent/50 transition-colors group'>
+            <div className='bg-card p-6 hover:bg-accent/50 transition-colors group'>
               <div className='h-8 w-8 rounded-md bg-background border border-border flex-1 justify-center mb-4 group-hover:border-primary/40 transition-colors'>
                 <BookOpen size={20} fill='none' className='h-4 w-4 mx-auto my-1.5 self-center text-muted-foreground group-hover:text-primary transition-colors' strokeWidth={2} strokeLinecap='round' strokeLinejoin='round' aria-hidden='true' />
               </div>
@@ -53,7 +53,7 @@ export default function Presentation (){
               </p>
             </div>
 
-            <div className='bg-card p-6 hover-bg-accent/50 transition-colors group'>
+            <div className='bg-card p-6 hover:bg-accent/50 transition-colors group'>
               <div className='h-8 w-8 rounded-md bg-background border border-border flex-1 justify-center mb-4 group-hover:border-primary/40 transition-colors'>
                 <Repeat2 size={20} fill='none' className='h-4 w-4 mx-auto my-1.5 self-center text-muted-foreground group-hover:text-primary transition-colors' strokeWidth={2} strokeLinecap='round' strokeLinejoin='round' aria-hidden='true' />
               </div>
@@ -65,7 +65,7 @@ export default function Presentation (){
               </p>
             </div>
 
-            <div className='bg-card p-6 hover-bg-accent/50 transition-colors group'>
+            <div className='bg-card p-6 hover:bg-accent/50 transition-colors group'>
               <div className='h-8 w-8 rounded-md bg-background border border-border flex-1 justify-center mb-4 group-hover:border-primary/40 transition-colors'>
                 <Globe size={20} fill='none' className='h-4 w-4 mx-auto my-1.5 self-center text-muted-foreground group-hover:text-primary transition-colors' strokeWidth={2} strokeLinecap='round' strokeLinejoin='round' aria-hidden='true' />
               </div>
@@ -77,7 +77,7 @@ export default function Presentation (){
               </p>
             </div>
 
-            <div className='bg-card p-6 hover-bg-accent/50 transition-colors group'>
+            <div className='bg-card p-6 hover:bg-accent/50 transition-colors group'>
               <div className='h-8 w-8 rounded-md bg-background border border-border flex-1 justify-center mb-4 group-hover:border-primary/40 transition-colors'>
                 <Cpu size={20} fill='none' className='h-4 w-4 mx-auto my-1.5 self-center text-muted-foreground group-hover:text-primary transition-colors' strokeWidth={2} strokeLinecap='round' strokeLinejoin='round' aria-hidden='true' />
               </div>

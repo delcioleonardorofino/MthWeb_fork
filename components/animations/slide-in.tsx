@@ -34,6 +34,7 @@ export function SlideIn({children, className, direction='up', delay=0, duration=
             ease: [0.16, 1, 0.3, 1]
         }}
         viewport={{ once, amount: 0.2 }}
+
         className={cn('transition-all duration-300', className)}
         >
             {children}
