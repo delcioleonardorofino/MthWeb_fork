@@ -9,7 +9,7 @@ export default function HomePage() {
         </div>
         <div className='flex justify-center align-center h-screen mt-18'>
             <h1 className='text-2xl font-bold tracking-tight text-foreground sm:text-2xl'>
-                Bem-vindo à sua dashboard!
+                Bem-vindo à Home!
             </h1>
         </div>
         </main>
