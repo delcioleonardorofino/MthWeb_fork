@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 import { FaGithub as GitHubIcon } from 'react-icons/fa';
 import Menu from '@/components/Menu';
-import {Button} from '@/components/ui/button';
+// import {Button} from '@/components/ui/button';
 
 async function signTo(){
     'use server'
@@ -39,14 +39,14 @@ export default function LogInComponent (){
                 </div>
 
                 <form action={signTo} className='space-y-4'>
-                    <Button
+                    <button
                     type='submit'
-                    variant='outline'
-                    className='w-full flex items-center justify-center gap-2 cursor-pointer p-4'
+                    className='w-full flex items-center justify-center gap-2 cursor-pointer py-3
+                    border border-border rounded-md text-sm font-medium text-foreground hover:bg-accent/50 transition-colors duration-200'
                     >
                         <GitHubIcon className='mr-2 h-4 w-4 ' />
                         Entrar com GitHub
-                    </Button>
+                    </button>
                 </form>
             </div>
         </main>
