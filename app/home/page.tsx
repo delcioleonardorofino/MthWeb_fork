@@ -10,6 +10,12 @@ export default function HomePage() {
               <NavMenu />
               <h2 className='text-md'>Home</h2>
             </div>
+<div className='flex gap-1.5'>
+              <ThemeToggler />
+
+              
+            </div>
+      
             
                       
         </div>
