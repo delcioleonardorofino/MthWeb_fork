@@ -1,6 +1,6 @@
 import LogoutButton from '@/components/ui/logoutButton';
 import { ThemeToggler } from "@/components/ui/themeToggler";
-import NavMenu from "./Menu";
+import NavMenu from "@/components/Menu";
 
 export default function HomePage() {
     return (
