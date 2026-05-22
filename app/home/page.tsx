@@ -7,7 +7,7 @@ export default function HomePage() {
             <h2 className='text-md'>Home</h2>
             <LogoutButton />          
         </div>
-        <div className='flex justify-center align-center h-screen mt-24'>
+        <div className='flex justify-center align-center h-screen mt-18'>
             <h1 className='text-2xl font-bold tracking-tight text-foreground sm:text-2xl'>
                 Bem-vindo à sua dashboard!
             </h1>
