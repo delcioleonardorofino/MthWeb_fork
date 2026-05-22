@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import {ThemeProvider} from '@/components/theme-provider'
 import Navbar from "@/components/navbar";
@@ -52,11 +51,10 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${jetbrainsMono.variable} ${sans.variable} ${dancingScript.variable} h-full antialiased min-w-87.5 dark:bg-background dark:text-foreground`}
-    suppressHydrationWarning>
+      suppressHydrationWarning>
       
         <body className="min-h-full flex flex-col">
           <ThemeProvider>
-            <Navbar />
             {children}
           </ThemeProvider>
         </body>

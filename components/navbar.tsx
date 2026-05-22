@@ -41,7 +41,7 @@ export default function Navbar() {
                         <Link href='/' className="ml-1 px-3 py-1.5 text-sm font-semibold bg-primary text-primary-foreground rounded-md hover:opacity-90 transition-opacity">
                             Juntar-se
                         </Link>
-                        <Link href='/' className="px-3 py-1.5 text-sm font-medium text-foreground border border-border rounded-md hover:bg-accent transition-colors">
+                        <Link href='/entrar' className="px-3 py-1.5 text-sm font-medium text-foreground border border-border rounded-md hover:bg-accent transition-colors">
                             Entrar
                         </Link>
                         
@@ -50,7 +50,7 @@ export default function Navbar() {
                     <div className="flex gap-2 md:hidden">
                         <ThemeToggler />
                         
-                        <Link href='/' className="px-3 py-1.5 text-sm font-medium text-foreground border border-border rounded-md hover:bg-accent transition-colors">
+                        <Link href='/entrar' className="px-3 py-1.5 text-sm font-medium text-foreground border border-border rounded-md hover:bg-accent transition-colors">
                             Entrar
                         </Link>
                         
