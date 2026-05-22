@@ -10,8 +10,8 @@ export default function NavMenu() {
             </SheetTrigger>
             <SheetContent 
             side={"left"}
-            className="bg-background/90 w-sm  max-w-3xl backdrop-blur-3xl
-            before:absolute before:inset-0 before:bg-background/5 before:pointer-none border-r mt-14 shadow-none">
+            className="bg-background/80 w-sm  max-w-3xl backdrop-blur-3xl
+            before:absolute before:inset-0 before:bg-background/5 before:pointer-none border-r shadow-none">
                 <SheetHeader className="hidden">
                     <SheetTitle>Are you absolutely sure?</SheetTitle>
                     <SheetDescription>This action cannot be undone.</SheetDescription>
