@@ -8,7 +8,7 @@ export default function HomePage() {
         <div className='flex justify-between align-center p-3 h-14 border-b border-border'>
             <div className='flex justify-center align-center gap-1.5'>
               <NavMenu />
-              <h2 className='text-md'>Home</h2>
+              <h2 className='text-md self-center'>Home</h2>
             </div>
 <div className='flex gap-1.5'>
              
