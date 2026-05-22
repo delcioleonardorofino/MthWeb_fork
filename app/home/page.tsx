@@ -1,12 +1,13 @@
 import LogoutButton from '@/components/ui/logoutButton';
 import { ThemeToggler } from "@/components/ui/themeToggler";
+import NavMenu from "./Menu";
 
 export default function HomePage() {
     return (
         <main className='flex-1'>
         <div className='flex justify-between align-center p-3 h-14 border-b border-border'>
             <div className='flex gap-1.5'>
-              <Menu />
+              <NavMenu />
               <h2 className='text-md'>Home</h2>
             </div>
             
