@@ -11,6 +11,7 @@ export default function HomePage() {
               <h2 className='text-md'>Home</h2>
             </div>
 <div className='flex gap-1.5'>
+             <LogoutButton/>
               <ThemeToggler />
 
               
