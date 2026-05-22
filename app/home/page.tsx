@@ -1,4 +1,5 @@
 import LogoutButton from '@/components/ui/logoutButton';
+import { ThemeToggler } from "@/components/ui/themeToggler";
 
 export default function HomePage() {
     return (
@@ -7,7 +8,7 @@ export default function HomePage() {
             <h2 className='text-md'>Home</h2>
             <div className='flex gap-2'>
             <LogoutButton />
-           
+            <ThemeToggler />
             </div>          
         </div>
         <div className='flex justify-center align-center h-screen mt-18'>
