@@ -14,7 +14,7 @@ export default function Logoutbutton () {
     return (
         <form action={logOut}>
             <button className="bg-background p-1.5 rounded-md text-muted-foreground self-center hover:text-foreground hover:bg-accent transition-colors">
-                <LogOut size={24} height={8} width={8} />
+                    <LogOut size={20} fill='none' stroke='currentColor' strokeWidth={2} strokeLinecap='round' strokeLinejoin='round' aria-hidden='true' />
             </button>
         </form>
     )
