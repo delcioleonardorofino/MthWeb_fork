@@ -15,7 +15,7 @@ async function signTo(){
 export default function LogInComponent (){
     return (
         <>
-        <div className='flex justify-between align-center p-3 h-14 border-b border-border'>
+        <div className='flex justify-between align-center p-3 px-3 h-14 border-b border-border'>
             <Link 
             href='/' 
             className='inline-flex items-center justify-center px-3  text-sm text-foreground'
@@ -44,7 +44,7 @@ export default function LogInComponent (){
                     variant='outline'
                     className='w-full flex items-center justify-center gap-2 cursor-pointer'
                     >
-                        <GitHubIcon className='mr-2 h-4 w-4 ' />
+                        <GitHubIcon className='mr-2 h-4 w-4 p4' />
                         Entrar com GitHub
                     </Button>
                 </form>
