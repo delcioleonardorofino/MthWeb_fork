@@ -6,7 +6,7 @@ export default function NavMenu() {
     return(
         <Sheet>
             <SheetTrigger>
-                <Menu size={32} />
+                <Menu size={24} />
             </SheetTrigger>
             <SheetContent 
             side={"left"}
