@@ -1,40 +1,53 @@
-'use client'
 
-import { 
-  Menu, 
-  Users, 
-  Zap, 
-  TrendingUp, 
-  Info, 
-  Settings, 
-  LogOut 
-} from "lucide-react"
-import MenuItem from "./MenuElement"
-import {
-  Sheet,
-  SheetContent,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet"
+import {Menu} from "lucide-react";
+import MenuItem from "./MenuElement";
+import {Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger} from "@/components/ui/sheet";
 
 const menuItems = [
-  { pathname: '/users', name: 'Engenheiros', icon: Users },
-  { pathname: '/latest', name: 'Recentes', icon: Zap },
-  { pathname: '/trending', name: 'Tendências', icon: TrendingUp },
-  { pathname: '/about', name: 'Sobre', icon: Info },
+    {
+        pathname: '/users',
+        name: 'Users'
+    },
+    {
+        pathname: '/latest',
+        name: 'Latest'
+    },
+    {
+        pathname: '/trending',
+        name: 'Trending'
+    },
+    {
+        pathname: '/about',
+        name: 'About'
+    },
 ]
 
 export default function NavMenu() {
-  return (
-    <Sheet>
-      <SheetTrigger className="p-2 transition-colors hover:bg-slate-500/10 rounded-lg">
-        <Menu size={24} strokeWidth={1.5} className="text-slate-200" />
-      </SheetTrigger>
-      
-      <SheetContent 
-        side="left"
-        className="flex flex-col bg-background/90 w-[280px] backdrop-blur-2xl border-r border-white/5 p-0 shadow-2xl"
+    return(
+        <Sheet>
+            <SheetTrigger>
+                <Menu size={24} />
+            </SheetTrigger>
+            <SheetContent 
+            side={"left"}
+            className="bg-background/80 w-xs backdrop-blur-3xl
+            before:absolute before:inset-0 before:bg-background/5 before:pointer-none border-r shadow-none">
+                <SheetHeader className="hidden">
+                    <SheetTitle>Are you absolutely sure?</SheetTitle>
+                    <SheetDescription>This action cannot be undone.</SheetDescription>
+                </SheetHeader>
+
+                <nav className="flex flex-col gap-2 items-center justify-center h-screen">
+                    {menuItems.map(item => (
+                        <MenuItem
+                        key={item.name}
+                        item = {item}/>
+                    ))}
+                </nav>
+            </SheetContent>
+        </Sheet>
+    )
+}        className="flex flex-col bg-background/90 w-[280px] backdrop-blur-2xl border-r border-white/5 p-0 shadow-2xl"
       >
         {/* Acessibilidade: Obrigatório para o componente Sheet */}
         <SheetHeader className="p-6 pb-2">
