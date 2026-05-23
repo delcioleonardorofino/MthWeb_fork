@@ -19,7 +19,8 @@ export default function NavElement({element} : NavElementProps){
         className='inline-flex flex-col cursor-pointer items-center justify-center px-5 rounded-lg'>
             <element.icon
             size={32}
-            className={`${path===element.pathname ? 'text-primary' : 'bg-background text-foreground'}`} />
+            fontWeight={2}
+            className={`${path===element.pathname ? 'text-primary/80' : 'bg-background/50 text-foreground'}`} />
         </Link>
     )
 }

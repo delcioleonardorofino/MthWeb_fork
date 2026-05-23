@@ -1,24 +1,21 @@
 import MobileNavMenu from '@/components/MobileNavMenu';
-import LogoutButton from '@/components/ui/logoutButton';
-import { ThemeToggler } from "@/components/ui/themeToggler";
-import NavMenu from "@/components/Menu";
+import { NewPostButton } from '@/components/NewPostButton'
+import NavMenu from '@/components/LoggedDrawer';
+import { ThemeToggler } from '@/components/ui/themeToggler';
 
 export default function HomePage() {
     return (
         <main className='flex-1'>
         <div className='flex justify-between align-center p-3 h-14 border-b border-border'>
-            <div className='flex justify-center align-center gap-1.5'>
-              <NavMenu />
-              <h2 className='text-md self-center'>Home</h2>
-            </div>
-<div className='flex gap-1.5'>
-             
-              <ThemeToggler />
-              <LogoutButton/>
 
-              
+            <div className='flex gap-1.5'>
+                <NavMenu />
+                <h2 className='text-md self-center'>Home</h2>
             </div>
-      
+            <div className='flex gap-1.5'>
+                <ThemeToggler />
+                <NewPostButton />
+            </div>
             
                       
         </div>
