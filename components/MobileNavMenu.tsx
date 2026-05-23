@@ -28,7 +28,7 @@ const elements = [
 export default function MobileNavMenu(){
     return(
         <nav 
-        className='fixed bottom-0 left-0 z-50 border-t border-border pt-2 px-4 flex justify-between w-full gap-3 pb-pb-safe align-center items-center md:hidden'>
+        className='fixed bottom-0 left-0 z-50 border-t border-border pt-2 px-4 flex justify-between w-full gap-3 pb-4 align-center items-center md:hidden'>
             {elements.map(element => (
                     <NavElement
                     key={element.id}
