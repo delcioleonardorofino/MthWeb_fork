@@ -22,7 +22,7 @@ export function AvatarDropdown() {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button variant="ghost" size="icon" className="rounded-full">
-          <Avatar>
+          <Avatar className='border border-primary'>
             <AvatarImage src={session?.user?.image || ''} alt="foto de perfil" />
             <AvatarFallback>{session?.user?.name?.[0] || 'U'}</AvatarFallback>
           </Avatar>
