@@ -1,5 +1,5 @@
 import MobileNavMenu from '@/components/MobileNavMenu';
-import LogoutButton from '@/components/ui/logoutButton';
+import { NewPostButton } from '@/components/NewPostButton'
 import NavMenu from '@/components/LoggedDrawer';
 import { ThemeToggler } from '@/components/ui/themeToggler';
 
@@ -13,7 +13,7 @@ export default function HomePage() {
             </div>
             <div className='flex gap-1.5'>
                 <ThemeToggler />
-                <LogoutButton />
+                <NewPostButton />
             </div>
             
                       

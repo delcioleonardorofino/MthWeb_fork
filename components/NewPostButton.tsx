@@ -8,7 +8,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 
-export function DropdownMenuShortcuts() {
+export function NewPostButton() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
