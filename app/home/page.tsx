@@ -1,3 +1,4 @@
+import MobileNavMenu from '@/components/MobileNavMenu';
 import LogoutButton from '@/components/ui/logoutButton';
 
 export default function HomePage() {
@@ -12,6 +13,7 @@ export default function HomePage() {
                 Bem-vindo à sua dashboard!
             </h1>
         </div>
+        <MobileNavMenu />
         </main>
     )
 }
