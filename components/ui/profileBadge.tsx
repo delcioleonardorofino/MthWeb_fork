@@ -33,12 +33,8 @@ export function AvatarDropdown() {
           <DropdownMenuItem>Perfil</DropdownMenuItem>
           <DropdownMenuItem>
             <Logoutbutton />
-            Sair
+            <span className='text-red-500'>Sair</span>
           </DropdownMenuItem>
-        </DropdownMenuGroup>
-        <DropdownMenuSeparator />
-        <DropdownMenuGroup>
-          <DropdownMenuItem variant="destructive">Log out</DropdownMenuItem>
         </DropdownMenuGroup>
       </DropdownMenuContent>
     </DropdownMenu>)
