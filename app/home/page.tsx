@@ -1,3 +1,4 @@
+import MobileNavMenu from '@/components/MobileNavMenu';
 import LogoutButton from '@/components/ui/logoutButton';
 import { ThemeToggler } from "@/components/ui/themeToggler";
 import NavMenu from "@/components/Menu";
@@ -26,6 +27,7 @@ export default function HomePage() {
                 Bem-vindo à Home!
             </h1>
         </div>
+        <MobileNavMenu />
         </main>
     )
 }
