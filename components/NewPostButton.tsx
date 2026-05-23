@@ -13,9 +13,10 @@ export function NewPostButton() {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button
+        className='bg-foreground text-background'
         variant="outline"
         >
-            <span className="text-muted-foreground">
+            <span className="text-lg text-muted-foreground">
                 +
             </span>
             Novo
