@@ -5,10 +5,7 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  /* 1. Bloco Isolado para a Safe Area */
-  @media (max-width: 767px) {
-    --spacing-pb-safe: calc(var(--spacing-4) + env(safe-area-inset-bottom));
-  } 
+  
 
   /* 2. Outras variáveis do Tema */
   --font-sans: var(--font-sans), sans-serif;
