@@ -9,7 +9,7 @@ export default function Logoutbutton () {
             onClick={() => signOut({callbackUrl:'/'}) }
             className="bg-background p-1.5 rounded-md text-muted-foreground self-center hover:text-foreground hover:bg-accent transition-colors">
                 <LogOut size={20}  />
-
+            </button>
         
     )
 }
