@@ -1,19 +1,26 @@
 'use client'
-import { LuBoxes, LuCircleUserRound, LuHouse, LuLayers } from "react-icons/lu"
+import { 
+  LayoutGrid,   // Para a Home/Feed (parece um blueprint/grelha)
+  HardHat,      // Para Projetos/Obras (muito específico para engenharia)
+  Layers,       // O que já tens, mas na versão Lucide é mais fina
+  Cpu,          // Para engenharia eletrotécnica/automação
+  Users,        // Para a rede de conexões
+  Search        // Para procurar engenheiros ou vagas
+} from 'lucide-react'
 import NavElement from "./NavElement";
 import { AvatarDropdown } from "./ui/profileBadge";
 
 const elements = [
     {id:1,
-    icon: LuHouse,
+    icon: LayoutGrid,
     pathname: '/home',},
 
     {id:2,
-    icon: LuLayers,
+    icon: Layers,
     pathname: '/artigos'},
 
     {id:3,
-    icon: LuBoxes,
+    icon: HardHat,
     pathname: '/projectos',},
 ]
 
