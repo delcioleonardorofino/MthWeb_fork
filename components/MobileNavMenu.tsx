@@ -1,6 +1,7 @@
 'use client'
 import { LuBoxes, LuCircleUserRound, LuHouse, LuLayers } from "react-icons/lu"
-import NavElement from "./NavElement"
+import NavElement from "./NavElement";
+import { AvatarDropdown } from "./ui/profileBadge";
 
 const elements = [
     {id:1,
@@ -14,10 +15,6 @@ const elements = [
     {id:3,
     icon: LuBoxes,
     pathname: '/projectos',},
-
-    {id:4,
-    icon: LuCircleUserRound,
-    pathname: '/perfil',},
 ]
 
 
@@ -31,6 +28,7 @@ export default function MobileNavMenu(){
                     element={element}/>
                 )
             )}
+            <AvatarDropdown />
         </nav>
     )
 }
