@@ -1,5 +1,4 @@
 'use client'
-import Link from "next/link";
 import { useEffect, useState } from 'react'
 import {
   LayoutGrid,
@@ -77,8 +76,8 @@ export default function MobileNavMenu() {
         />
       ))}
 
-      <Link
-            href={element.pathname}
+      <div
+            
             className="
                 group relative
                 inline-flex flex-col items-center justify-center
@@ -112,7 +111,7 @@ export default function MobileNavMenu() {
                         : 'opacity-0 scale-0'}
                 `}
             />
-        </Link>
+        </div>
       
     </nav>
   )
