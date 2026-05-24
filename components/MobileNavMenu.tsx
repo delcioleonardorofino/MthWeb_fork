@@ -14,16 +14,19 @@ const elements = [
   {
     id: 1,
     icon: LayoutGrid,
+    label: 'Home',
     pathname: '/home',
   },
   {
     id: 2,
     icon: Layers,
+    label: 'Artigos',
     pathname: '/artigos',
   },
   {
     id: 3,
     icon: HardHat,
+    label: 'Projetos',
     pathname: '/projectos',
   },
 ]
