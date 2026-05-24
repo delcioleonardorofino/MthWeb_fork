@@ -6,7 +6,7 @@ import { ThemeToggler } from '@/components/ui/themeToggler';
 export default function HomePage() {
     return (
         <main className='flex-1'>
-        <div className='fixed top-0 flex justify-between align-center p-3 h-14 border-b border-border'>
+        <div className='fixed top-0 w-full bg-background flex justify-between align-center p-3 h-14 border-b border-border'>
 
             <div className='flex gap-1.5'>
                 <NavMenu />
