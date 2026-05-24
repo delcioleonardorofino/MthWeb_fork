@@ -13,7 +13,7 @@ export function NewPostButton() {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button
-        className='bg-foreground border border-border text-background font-mono'
+        className='bg-foreground border border-border text-background focus:border-none font-mono'
         >
             <span className="text-lg text-muted-foreground">
                 +
