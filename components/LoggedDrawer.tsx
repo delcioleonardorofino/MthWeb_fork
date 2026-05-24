@@ -85,7 +85,7 @@ export default function Sidebar() {
       <div className="md:hidden">
         <Sheet open={open} onOpenChange={setOpen}>
           <SheetTrigger asChild>
-            <button className="p-2 rounded-lg hover:bg-slate-500/10 transition">
+            <button className="flex-inline justify-center align-center self-center p-2 rounded-lg hover:bg-slate-500/10 transition">
               <Menu size={22} />
             </button>
           </SheetTrigger>
