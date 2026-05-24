@@ -60,7 +60,7 @@ export default function MobileNavMenu() {
       className={`
         fixed bottom-0 left-0 z-50
         border-t border-border
-        pt-1 p-4
+        pt-1 p-2.5
         flex justify-between items-center
         w-full gap-3
         md:hidden
