@@ -3,13 +3,13 @@
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { Menu } from "lucide-react"
+import { useState } from "react"
 import { motion } from "framer-motion"
 
 import {
   Sheet,
   SheetContent,
   SheetTrigger,
-  SheetClose
 } from "@/components/ui/sheet"
 
 const menuItems = [
@@ -19,7 +19,7 @@ const menuItems = [
   { pathname: "/about", name: "About" },
 ]
 
-function SidebarItems({ pathname }: any) {
+function SidebarItems({ pathname, onNavigate }: any) {
   return (
     <nav className="flex flex-col gap-1 p-4">
       {menuItems.map((item) => {
@@ -28,37 +28,43 @@ function SidebarItems({ pathname }: any) {
           pathname.startsWith(item.pathname + "/")
 
         return (
-          <SheetClose asChild key={item.name}>
-            <Link
-              href={item.pathname}
-              className="relative flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium"
+          <Link
+            key={item.name}
+            href={item.pathname}
+            onClick={onNavigate}
+            className="relative flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-colors"
+          >
+            {/* ACTIVE BACKGROUND */}
+            {isActive && (
+              <motion.div
+                layoutId="active-pill"
+                className="absolute inset-0 bg-teal-500/10 rounded-xl"
+                transition={{
+                  type: "spring",
+                  stiffness: 500,
+                  damping: 40,
+                }}
+              />
+            )}
+
+            <span
+              className={`relative z-10 transition-colors ${
+                isActive
+                  ? "text-teal-500"
+                  : "text-slate-400 hover:text-slate-200"
+              }`}
             >
-              {isActive && (
-                <motion.div
-                  layoutId="active-pill"
-                  className="absolute inset-0 bg-teal-500/10 rounded-xl"
-                  transition={{ type: "spring", stiffness: 500, damping: 40 }}
-                />
-              )}
+              {item.name}
+            </span>
 
-              <span
-                className={`relative z-10 transition-colors ${
-                  isActive
-                    ? "text-teal-500"
-                    : "text-slate-400 hover:text-slate-200"
-                }`}
-              >
-                {item.name}
-              </span>
-
-              {isActive && (
-                <motion.div
-                  layoutId="active-bar"
-                  className="ml-auto h-5 w-1 rounded-full bg-teal-500 shadow-[0_0_10px_rgba(20,184,166,0.8)]"
-                />
-              )}
-            </Link>
-          </SheetClose>
+            {/* ACTIVE BAR */}
+            {isActive && (
+              <motion.div
+                layoutId="active-bar"
+                className="ml-auto h-5 w-1 rounded-full bg-teal-500 shadow-[0_0_10px_rgba(20,184,166,0.8)]"
+              />
+            )}
+          </Link>
         )
       })}
     </nav>
@@ -67,12 +73,17 @@ function SidebarItems({ pathname }: any) {
 
 export default function Sidebar() {
   const pathname = usePathname()
+  const [open, setOpen] = useState(false)
+
+  const handleNavigate = () => {
+    setOpen(false)
+  }
 
   return (
     <>
       {/* MOBILE */}
       <div className="md:hidden">
-        <Sheet>
+        <Sheet open={open} onOpenChange={setOpen}>
           <SheetTrigger asChild>
             <button className="p-2 rounded-lg hover:bg-slate-500/10 transition">
               <Menu size={22} />
@@ -83,7 +94,10 @@ export default function Sidebar() {
             side="left"
             className="w-72 bg-background/80 backdrop-blur-2xl border-r"
           >
-            <SidebarItems pathname={pathname} />
+            <SidebarItems
+              pathname={pathname}
+              onNavigate={handleNavigate}
+            />
           </SheetContent>
         </Sheet>
       </div>
