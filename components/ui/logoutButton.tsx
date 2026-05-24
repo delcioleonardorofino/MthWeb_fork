@@ -7,8 +7,9 @@ export default function Logoutbutton () {
 
             <button 
             onClick={() => signOut({callbackUrl:'/'}) }
-            className="bg-background p-1.5 rounded-md text-muted-foreground self-center hover:text-foreground hover:bg-accent transition-colors">
+            className="flex gap-1.5 bg-background p-1.5 rounded-md text-muted-foreground self-center hover:text-foreground hover:bg-accent transition-colors">
                 <LogOut size={18}  />
+                Sair
             </button>
         
     )
