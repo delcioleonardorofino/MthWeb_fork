@@ -28,7 +28,7 @@ export function AvatarDropdown() {
           </Avatar>
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="w-32">
+      <DropdownMenuContent className="w-32 bg-background/80 backdrop-blur-2xl text-foreground">
         <DropdownMenuGroup>
           <DropdownMenuItem>Perfil</DropdownMenuItem>
           <DropdownMenuItem>
