@@ -21,7 +21,8 @@ export function NewPostButton() {
             Novo
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent>
+      <DropdownMenuContent 
+        className='bg-background/80 backdrop-blur-2xl text-foreground'>
         <DropdownMenuGroup>
           <DropdownMenuItem>
             Projecto
