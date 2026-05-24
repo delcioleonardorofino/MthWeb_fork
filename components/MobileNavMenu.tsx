@@ -1,5 +1,4 @@
 'use client'
-
 import { useEffect, useState } from 'react'
 import {
   LayoutGrid,
@@ -77,7 +76,43 @@ export default function MobileNavMenu() {
         />
       ))}
 
-      <AvatarDropdown />
+      <Link
+            href={element.pathname}
+            className="
+                group relative
+                inline-flex flex-col items-center justify-center
+                gap-1
+                px-3 py-1
+                outline-none
+                min-w-[64px]
+            "
+        >
+            
+         <AvatarDropdown />
+            <span
+                className={`
+                    text-[11px] font-medium transition-all duration-300
+                    ${isActive
+                        ? 'text-primary'
+                        : 'text-foreground/50 group-hover:text-foreground/80'}
+                `}
+            >
+                Perfil
+            </span>
+
+            {/* Indicador visual minimalista */}
+            <span
+                className={`
+                    absolute -bottom-1
+                    w-1 h-1 rounded-full bg-primary
+                    transition-all duration-300
+                    ${isActive
+                        ? 'opacity-100 scale-100'
+                        : 'opacity-0 scale-0'}
+                `}
+            />
+        </Link>
+      
     </nav>
   )
 }
