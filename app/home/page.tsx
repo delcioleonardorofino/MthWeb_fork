@@ -9,7 +9,7 @@ export default function HomePage() {
         <div className='fixed top-0 w-full bg-background flex justify-between align-center p-3 h-14 border-b border-border'>
 
             <div className='flex gap-1.5'>
-                
+                <Sidebar/>
                 <h2 className='text-sm self-center'>Home</h2>
             </div>
             <div className='flex gap-1.5'>
