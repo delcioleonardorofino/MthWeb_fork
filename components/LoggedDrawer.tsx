@@ -19,7 +19,7 @@ const menuItems = [
   { pathname: "/about", name: "About" },
 ]
 
-function SidebarItems({ pathname, onNavigate }: any) {
+function SidebarItems({ pathname, onNavigate }) {
   return (
     <nav className="flex flex-col gap-1 p-4">
       {menuItems.map((item) => {
@@ -81,8 +81,7 @@ export default function Sidebar() {
 
   return (
     <>
-      {/* MOBILE */}
-      <div className="md:hidden">
+      <div className="">
         <Sheet open={open} onOpenChange={setOpen}>
           <SheetTrigger asChild>
             <button className="flex-inline justify-center align-center self-center p-2 rounded-lg hover:bg-slate-500/10 transition">
@@ -102,14 +101,7 @@ export default function Sidebar() {
         </Sheet>
       </div>
 
-      {/* DESKTOP */}
-      <aside className="hidden md:flex flex-col w-64 h-screen border-r bg-background/60 backdrop-blur-xl">
-        <div className="p-4 text-sm text-slate-400 font-semibold">
-          Navigation
-        </div>
 
-        <SidebarItems pathname={pathname} />
-      </aside>
     </>
   )
 }
