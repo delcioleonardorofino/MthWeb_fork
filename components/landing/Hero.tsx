@@ -7,7 +7,7 @@ import { FadeIn } from '../animations/fade-in'
 
 export default function Hero(){
     return (
-        <section className='relative pt-11 pb-20 overflow-hidden border-b border-border'>
+        <section className='relative pt-8 md:pt-11 pb-20 overflow-hidden border-b border-border'>
             
             <div className='max-w-6xl mx-auto px-4 md:px-6'>
 
