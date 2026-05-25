@@ -5,7 +5,7 @@ import { ThemeToggler } from "./ui/themeToggler";
 
 export default function Navbar() {
     return(
-        <header className="fixed top-0 w-full z-50 bg-background/95 backdrop-blur-3xl">
+        <header className="w-full bg-background/95 backdrop-blur-3xl">
             <div className='max-w-6xl mx-auto px-4 md:px-6'>
 
                 <div className="flex items-center justify-between h-14">

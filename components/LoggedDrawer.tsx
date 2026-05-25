@@ -12,6 +12,11 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet"
 
+interface SidebarProps {
+  pathname: string;
+  onNavigate?: () => void;
+}
+
 const menuItems = [
   { pathname: "/users", name: "Users" },
   { pathname: "/latest", name: "Latest" },
@@ -19,7 +24,7 @@ const menuItems = [
   { pathname: "/about", name: "About" },
 ]
 
-function SidebarItems({ pathname, onNavigate }) {
+function SidebarItems({ pathname, onNavigate } : SidebarProps) {
   return (
     <nav className="flex flex-col gap-1 p-4">
       {menuItems.map((item) => {
