@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import NavMenu from "./Menu";
-import { ThemeToggler } from "./ui/themeToggler";
+import { ThemeToggler } from "../ui/themeToggler";
 
 export default function Navbar() {
     return(

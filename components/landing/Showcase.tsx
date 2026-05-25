@@ -1,6 +1,6 @@
 import Link from "next/link";
 import {ArrowUpRight, Star, Users, GitCommit} from 'lucide-react';
-import { FadeIn } from "./animations/fade-in";
+import { FadeIn } from "../animations/fade-in";
 import ShowCaseCard from "./ShowCaseCard";
 
 const showcaseProjects = [

@@ -1,17 +1,17 @@
-import Presentation from '@/components/Presentation';
-import Hero from '@/components/Hero';
-import GlobalStats from '@/components/GlobalStats';
+import Presentation from '@/components/landing/Presentation';
+import Hero from '@/components/landing/Hero';
+import GlobalStats from '@/components/landing/GlobalStats';
 import { FadeIn } from '@/components/animations/fade-in';
-import Showcase from '@/components/Showcase';
-import Navbar from '@/components/navbar';
-import Community from '@/components/Community';
-import BottomCTA from '@/components/BottomCTA';
-import Footer from '@/components/Footer';
+import Showcase from '@/components/landing/Showcase';
+import Navbar from '@/components/landing/navbar';
+import Community from '@/components/landing/Community';
+import BottomCTA from '@/components/landing/BottomCTA';
+import Footer from '@/components/landing/Footer';
 
 
 export default function LandingPage() {
   return (
-    <div>
+    <div className="min-h-dvh flex flex-col bg-background text-foreground overflow-hidden">
     <Navbar />
     <main className="flex-1">
       

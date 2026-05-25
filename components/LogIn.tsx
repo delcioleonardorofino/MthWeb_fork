@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
-import Menu from '@/components/Menu';
+import Menu from '@/components/landing/Menu';
 import LogInForm from './LogInForm';
 // import {Button} from '@/components/ui/button';
 
