@@ -29,7 +29,7 @@ export default async function Users(){
                 users.map((user)=>(
                     <div
                     key={user.id}
-                    className='bg-card p-4 rounded-lg mt-3 mx-auto'
+                    className='bg-card p-4 rounded-lg border-b border-border mt-3 mx-auto'
                     >
                         <h2>{user.name}</h2>
                         <p>{user.email}</p>
