@@ -1,3 +1,5 @@
+'use server'
+
 import { FaGithub as GitHubIcon } from 'react-icons/fa';
 import { FcGoogle as GoogleIcon } from 'react-icons/fc';
 
@@ -5,7 +7,7 @@ import { FcGoogle as GoogleIcon } from 'react-icons/fc';
 
 export default function LogInForm (){
     return (
-        <form action={()=>{}} className='space-y-4'>
+        <form className='space-y-4'>
             <button
             type='submit'
             name='provider'
