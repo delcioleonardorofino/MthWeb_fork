@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import {ThemeProvider} from '@/components/theme-provider';
-import { SessionProvid } from "@/components/SessionProvider";
 import localFont from 'next/font/local';
 
 
@@ -55,9 +54,7 @@ export default function RootLayout({
       
         <body className="min-h-full flex flex-col">
           <ThemeProvider>
-            <SessionProvid>
             {children}
-            </SessionProvid>
           </ThemeProvider>
         </body>
 

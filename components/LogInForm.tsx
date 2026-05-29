@@ -1,22 +1,11 @@
 import { FaGithub as GitHubIcon } from 'react-icons/fa';
 import { FcGoogle as GoogleIcon } from 'react-icons/fc';
-import { signIn } from '@/auth';
 
-
-async function signTo(formData: FormData){
-    'use server'
-
-    const prov = formData.get('provider') as string;
-    
-    await signIn(prov, {
-        redirectTo: "/home"
-    })
-}
 
 
 export default function LogInForm (){
     return (
-        <form action={signTo} className='space-y-4'>
+        <form action={()=>{}} className='space-y-4'>
             <button
             type='submit'
             name='provider'

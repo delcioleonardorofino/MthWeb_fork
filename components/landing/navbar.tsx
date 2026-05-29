@@ -50,7 +50,7 @@ export default function Navbar() {
                     <div className="flex gap-2 md:hidden">
                         <ThemeToggler />
                         
-                        <Link href='/entrar' className="px-3 py-1.5 text-sm font-medium text-foreground border border-border rounded-md hover:bg-accent transition-colors">
+                        <Link href='/entrar' className="flex-inline justify-center text-center items-center align-center px-3 py-1.5 text-sm font-medium text-foreground border border-border rounded-md hover:bg-accent transition-colors">
                             Entrar
                         </Link>
                         
