@@ -5,7 +5,7 @@ import { FcGoogle as GoogleIcon } from 'react-icons/fc';
 
 
 
-export default function LogInForm (){
+export default async function LogInForm (){
     return (
         <form className='space-y-4'>
             <button
