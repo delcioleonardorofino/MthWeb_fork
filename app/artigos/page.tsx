@@ -42,7 +42,7 @@ export default async function Users(){
                         height={32} />
                         }
                     </div>
-            )}
+            ))}
         </div>
     )
 }
