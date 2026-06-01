@@ -10,6 +10,9 @@ import {
   Sheet,
   SheetContent,
   SheetTrigger,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle
 } from "@/components/ui/sheet"
 
 interface SidebarProps {
@@ -89,7 +92,7 @@ export default function Sidebar() {
       <div className="">
         <Sheet open={open} onOpenChange={setOpen}>
           <SheetTrigger asChild>
-            <button className="flex-inline justify-center align-center self-center p-2 rounded-lg hover:bg-slate-500/10 transition">
+            <button className="flex-inline justify-center align-center self-center p-2 rounded-full bg-card hover:bg-slate-500/10 transition">
               <Menu size={22} />
             </button>
           </SheetTrigger>
@@ -98,6 +101,14 @@ export default function Sidebar() {
             side="left"
             className="w-72 bg-background/80 backdrop-blur-2xl border-r"
           >
+            <SheetHeader>
+              <SheetTitle className='hidden'>
+                Menu
+              </SheetTitle>
+              <SheetDescription className="hidden">
+                This is the menu.
+              </SheetDescription>
+            </SheetHeader>
             <SidebarItems
               pathname={pathname}
               onNavigate={handleNavigate}

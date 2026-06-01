@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 import Menu from '@/components/landing/Menu';
 import LogInForm from './LogInForm';
-// import {Button} from '@/components/ui/button';
+import EmailLoginForm from '@/components/emailLogin'
 
 
 export default function LogInComponent (){
@@ -32,6 +32,17 @@ export default function LogInComponent (){
                 </div>
 
                 <LogInForm />
+                <div className='relative my-4'>
+                    <div className='absolute inset-0 flex items-center'>
+                        <div className='w-full border-t border-border' />
+                    </div>
+                    <div className='relative flex justify-center text-xs uppercase'>
+                        <span className='bg-card px-2 text-muted-foreground'>
+                            ou
+                        </span>
+                    </div>
+                </div>
+                <EmailLoginForm />
             </div>
         </main>
         </>

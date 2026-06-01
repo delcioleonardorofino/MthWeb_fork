@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import {ThemeProvider} from '@/components/theme-provider';
 import localFont from 'next/font/local';
+import {AuthProvider} from '@/contexts/AuthContext'
 
 
 const jetbrainsMono = localFont({
@@ -48,13 +49,15 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="pt"
       className={`${jetbrainsMono.variable} ${sans.variable} ${dancingScript.variable} h-full antialiased min-w-87.5 dark:bg-background dark:text-foreground`}
       suppressHydrationWarning>
       
         <body className="min-h-full flex flex-col">
           <ThemeProvider>
-            {children}
+            <AuthProvider>
+              {children}
+            </AuthProvider> 
           </ThemeProvider>
         </body>
 

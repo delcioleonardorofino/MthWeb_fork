@@ -20,9 +20,9 @@ export function ThemeToggler() {
     return(
         <Button 
         onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
-        className="bg-background p-1.5 rounded-md text-muted-foreground self-center hover:text-foreground hover:bg-accent transition-colors">
+        className="bg-card p-1.5 rounded-2xl text-muted-foreground self-center hover:text-foreground hover:bg-muted transition-colors">
             {
-                theme === 'light' ? <Sun height={8} width={8} /> : <Moon height={8} width={8} />
+                theme === 'light' ? <Sun size={36} /> : <Moon size={36} />
             }
         </Button>
     )

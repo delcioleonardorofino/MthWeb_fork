@@ -130,3 +130,12 @@
     @apply font-semibold tracking-tight;
   }
 }
+
+
+.ProseMirror {
+  padding: 12px;
+  min-height: 200px;
+  outline: none;
+  color: var(--foreground);
+  background: var(--background) 
+}

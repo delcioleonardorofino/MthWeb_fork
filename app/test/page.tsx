@@ -1,10 +1,10 @@
 
-import { apiFetch } from "@/lib/api";
+import { apiRequest } from "@/lib/api";
 import {Project} from '@/lib/types'
 
 export default async function Test(){
     
-    const projects = await apiFetch('/projects')
+    const projects = await apiRequest('/projects')
 
     return(
         <main className="p-8">
